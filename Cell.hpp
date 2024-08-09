@@ -24,6 +24,10 @@ public:
       return "";
     }
   }
+
+  bool operator==(const Cell &c) const noexcept;
+  bool operator>(const Cell &c) const noexcept;
+  bool operator<(const Cell &c) const noexcept;
 };
 
 #endif
