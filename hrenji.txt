@@ -1,0 +1,17 @@
+  cells.push_back(Cell(10, 10, true));
+  cells.push_back(Cell(11, 10, true));
+  cells.push_back(Cell(12, 10, true));
+  cells.push_back(Cell(12, 9, true));
+  cells.push_back(Cell(11, 8, true));
+
+  cells.push_back(Cell(10, 20, true));
+  cells.push_back(Cell(11, 20, true));
+  cells.push_back(Cell(12, 20, true));
+  cells.push_back(Cell(13, 20, true));
+  cells.push_back(Cell(14, 20, true));
+  cells.push_back(Cell(15, 20, true));
+  cells.push_back(Cell(16, 20, true));
+  cells.push_back(Cell(17, 20, true));
+  cells.push_back(Cell(18, 20, true));
+  cells.push_back(Cell(19, 20, true));
+  cells.push_back(Cell(20, 20, true));
