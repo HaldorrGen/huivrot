@@ -7,11 +7,7 @@ public:
     bool isAlive;
     int x, y;
 
-    // Конструктор по умолчанию
-    Cell();
-    
-    // Конструктор с параметрами
-    Cell(int x1, int y1, bool isAlive);
+    Cell(int x1, int y1, bool isAlive1);
 
     void revive(){
         isAlive = true;
@@ -20,8 +16,7 @@ public:
     void kill() {
         isAlive = false;
     }
-    
-    // Метод для получения строки представления клетки
+
     std::string print() const {
         if (isAlive) {
             return "x";  
@@ -32,4 +27,4 @@ public:
 
 };
 
-#endif // CELL_HPP
+#endif 
