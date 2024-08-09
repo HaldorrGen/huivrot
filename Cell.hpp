@@ -4,27 +4,26 @@
 
 class Cell {
 public:
-    bool isAlive;
-    int x, y;
+  void
+  decideIfCellWantToBeAliveBasedOnCalculatedNeighboursCountWhichWasCalculatedByBoard(
+      int n);
 
-    Cell(int x1, int y1, bool isAlive1);
+  bool isAlive;
+  int x, y;
 
-    void revive(){
-        isAlive = true;
+  Cell(int x1, int y1, bool isAlive1);
+
+  void revive() { isAlive = true; }
+
+  void kill() { isAlive = false; }
+
+  std::string print() const {
+    if (isAlive) {
+      return "x";
+    } else {
+      return "";
     }
-
-    void kill() {
-        isAlive = false;
-    }
-
-    std::string print() const {
-        if (isAlive) {
-            return "x";  
-        } else {
-            return "";   
-        }
-    }
-
+  }
 };
 
-#endif 
+#endif
