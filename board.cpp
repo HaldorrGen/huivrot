@@ -27,9 +27,7 @@ void Board::iterate() {
     for (int j = 0; j < w; j++) {
       int n = CountNeighbours(i, j);
       Tcells[i][j] = cells[i][j];
-      Tcells[i][j]
-          .decideIfCellWantToBeAliveBasedOnCalculatedNeighboursCountWhichWasCalculatedByBoard(
-              n);
+      Tcells[i][j].decideITOCHKAfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard(n);
     }
   }
 
@@ -62,6 +60,7 @@ void Board::populateStartCells(std::vector<Cell> newCells) {
     cells[c.y][c.x] = c;
   }
 }
+
 void Board::printBoard() {
 
   system("clear");

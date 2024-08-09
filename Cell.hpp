@@ -5,7 +5,7 @@
 class Cell {
 public:
   void
-  decideIfCellWantToBeAliveBasedOnCalculatedNeighboursCountWhichWasCalculatedByBoard(
+  decideITOCHKAfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard(
       int n);
 
   bool isAlive;

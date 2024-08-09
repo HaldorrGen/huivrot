@@ -8,7 +8,7 @@ Cell::Cell(int x1, int y1, bool isAlive1) {
 };
 
 void Cell::
-    decideIfCellWantToBeAliveBasedOnCalculatedNeighboursCountWhichWasCalculatedByBoard(
+    decideITOCHKAfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard(
 
         int n) {
 
