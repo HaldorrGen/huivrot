@@ -4,9 +4,7 @@
 
 class Cell {
 public:
-  void
-  decideITOCHKAfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard(
-      int n);
+  void iterate(int n);//decideTOCHKAIfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard
 
   bool isAlive;
   int x, y;

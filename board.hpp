@@ -12,6 +12,7 @@ public:
   void printBoard();
 
 private:
+ 
   int h, w;
   Cell **cells;
   Cell **Tcells;

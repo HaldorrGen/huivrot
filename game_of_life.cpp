@@ -4,16 +4,13 @@
 #include <unistd.h>
 #include <vector>
 
-#define W 20
-#define H 20
+#define W 100
+#define H 30
 
 int main(int argc, char **argv) {
   std::vector<Cell> cells;
-  cells.push_back(Cell(10, 10, true));
-  cells.push_back(Cell(11, 10, true));
-  cells.push_back(Cell(12, 10, true));
-  cells.push_back(Cell(12, 9, true));
-  cells.push_back(Cell(11, 8, true));
+
+
 
   Board b = Board(W, H);
 

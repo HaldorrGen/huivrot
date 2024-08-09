@@ -1,7 +1,11 @@
 #include "board.hpp"
 #include "Cell.hpp"
+#include <set>
 
 Board::Board(int width, int height) {
+
+  std::set<Cell> alive_set;
+
   cells = (Cell **)malloc(sizeof(Cell *) * height);
   Tcells = (Cell **)malloc(sizeof(Cell *) * height);
   for (int i = 0; i < height; i++) {
@@ -27,7 +31,7 @@ void Board::iterate() {
     for (int j = 0; j < w; j++) {
       int n = CountNeighbours(i, j);
       Tcells[i][j] = cells[i][j];
-      Tcells[i][j].decideITOCHKAfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard(n);
+      Tcells[i][j].iterate(n);//decideTOCHKAIfCellWantToBeAliveTOCHKABasedOnCalculatedNeighboursCountTOCHKAWhichWasCalculatedByBoard
     }
   }
 
